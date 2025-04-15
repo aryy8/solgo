@@ -27,15 +27,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/ride" className="font-roboto text-white/80 hover:text-solgo-teal transition-colors">
-            Book a Ride
-          </Link>
-          <Link to="/community" className="font-roboto text-white/80 hover:text-solgo-teal transition-colors">
-            Community
-          </Link>
-          <Link to="/about" className="font-roboto text-white/80 hover:text-solgo-teal transition-colors">
-            About
-          </Link>
+          
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
