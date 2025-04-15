@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Wallet } from 'lucide-react';
@@ -80,11 +79,6 @@ export function Hero() {
                     size={18} 
                     className={`ml-2 transition-transform duration-300 ${isHovered ? 'translate-x-1' : ''}`} 
                   />
-                </Button>
-              </Link>
-              <Link to="/drive">
-                <Button variant="outline" size="xl" className="text-white border-white/30 hover:bg-white/5 hover:border-white/50">
-                  Become a Driver
                 </Button>
               </Link>
             </div>

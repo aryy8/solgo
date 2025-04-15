@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/home/hero";
@@ -6,22 +6,17 @@ import { Features } from "@/components/home/features";
 import { Button } from "@/components/ui/button";
 import { MapPlaceholder } from "@/components/ui/map-placeholder";
 import { Car, Shield, Network, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-solgo-black text-white">
       <Header />
       
-      {/* Hero Section */}
       <Hero />
       
-      {/* Features Section */}
       <Features />
       
-      {/* How It Works Section */}
       <section className="py-24 relative overflow-hidden">
-        {/* Background grid */}
         <div 
           className="absolute inset-0 opacity-10" 
           style={{ 
@@ -33,7 +28,6 @@ const Index = () => {
           }}
         />
         
-        {/* Glowing orb accents */}
         <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-solgo-teal/10 filter blur-[100px]" />
         <div className="absolute top-20 right-10 w-80 h-80 rounded-full bg-solgo-purple/5 filter blur-[120px]" />
         
@@ -110,9 +104,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
       <section className="py-24 bg-gradient-to-b from-solgo-dark to-solgo-black relative overflow-hidden">
-        {/* Decorative elements */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-solgo-teal/50 to-transparent" />
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <svg className="absolute w-full" style={{ top: '-80%', opacity: 0.1 }}>
@@ -142,11 +134,6 @@ const Index = () => {
               <Link to="/ride">
                 <Button variant="glow" size="xl">
                   Book a Ride
-                </Button>
-              </Link>
-              <Link to="/drive">
-                <Button variant="outline" size="xl" className="text-white border-white/30 hover:bg-white/5 hover:border-white/50">
-                  Become a Driver
                 </Button>
               </Link>
             </div>
