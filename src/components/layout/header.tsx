@@ -30,9 +30,6 @@ export function Header() {
           <Link to="/ride" className="font-roboto text-white/80 hover:text-solgo-teal transition-colors">
             Book a Ride
           </Link>
-          <Link to="/drive" className="font-roboto text-white/80 hover:text-solgo-teal transition-colors">
-            Drive
-          </Link>
           <Link to="/community" className="font-roboto text-white/80 hover:text-solgo-teal transition-colors">
             Community
           </Link>
@@ -42,10 +39,12 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="outline" className="text-solgo-teal border-solgo-teal hover:text-solgo-teal">
-            Log in
+          <Button variant="outline" asChild className="text-solgo-teal border-solgo-teal hover:text-solgo-teal">
+            <Link to="/login">Log in</Link>
           </Button>
-          <Button variant="glow">Sign Up</Button>
+          <Button variant="glow" asChild>
+            <Link to="/driver-login">Become a Driver</Link>
+          </Button>
         </div>
 
         {/* Mobile menu button */}
@@ -70,13 +69,6 @@ export function Header() {
               Book a Ride
             </Link>
             <Link 
-              to="/drive" 
-              className="font-roboto py-3 px-4 text-white/80 hover:bg-solgo-teal/10 hover:text-solgo-teal rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Drive
-            </Link>
-            <Link 
               to="/community" 
               className="font-roboto py-3 px-4 text-white/80 hover:bg-solgo-teal/10 hover:text-solgo-teal rounded-md transition-colors"
               onClick={() => setIsMenuOpen(false)}
@@ -91,11 +83,11 @@ export function Header() {
               About
             </Link>
             <div className="flex flex-col gap-2 mt-2">
-              <Button variant="outline" className="text-solgo-teal border-solgo-teal hover:text-solgo-teal w-full">
-                Log in
+              <Button variant="outline" asChild className="text-solgo-teal border-solgo-teal hover:text-solgo-teal w-full">
+                <Link to="/login">Log in</Link>
               </Button>
-              <Button variant="glow" className="w-full">
-                Sign Up
+              <Button variant="glow" asChild className="w-full">
+                <Link to="/driver-login">Become a Driver</Link>
               </Button>
             </div>
           </div>
